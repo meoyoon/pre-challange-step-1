@@ -22,7 +22,8 @@
   "rules": {
     "import/default": "off",
     "import/newline-after-import": "error",
-
+    "import/no-duplicates": "off",
+    
     "prettier/prettier": "error",
     
     "react/react-in-jsx-scope": "off",
