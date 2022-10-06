@@ -3,12 +3,15 @@ import { useRouter } from './core/Router';
 export default function About() {
   const { push } = useRouter();
   return (
-    <div
-      onClick={() => {
-        push('/');
-      }}
-    >
-      나? 어바웃
+    <div>
+      <p>나? 어바웃</p>
+      <button
+        onClick={() => {
+          push('/');
+        }}
+      >
+        go main
+      </button>
     </div>
   );
 }
