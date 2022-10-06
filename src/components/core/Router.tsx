@@ -51,8 +51,8 @@ export default function Router({ children }: { children: ReactElement[] }) {
   );
 
   useEffect(() => {
-    window.onpopstate = (event: PopStateEvent) => {
-      console.log(event);
+    window.onpopstate = () => {
+      actions.setPath(window.location.pathname);
     };
 
     return () => {
