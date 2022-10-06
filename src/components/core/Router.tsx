@@ -55,15 +55,12 @@ export default function Router({ children }: { children: ReactElement[] }) {
       actions.setPath(window.location.pathname);
     };
 
-    return () => {
-      window.onpopstate = null;
-    };
-  }, []);
-
-  useEffect(() => {
     if (!path && pathList.length === children.length) {
       actions.setPath(window.location.pathname);
     }
+    return () => {
+      window.onpopstate = null;
+    };
   }, [pathList]);
 
   return (
