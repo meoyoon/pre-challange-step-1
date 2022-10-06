@@ -1,6 +1,6 @@
 ## 기능 명세 + 테스트
 - [x] 뒤로가기 / 앞으로가기할 경우, route에 맞는 화면이 표시되는가?
-- [x] useRoute의 push를 사용할 경우, 받은 path로 router가 변경되는가?
+- [x] useRouter의 push를 사용할 경우, 받은 path로 router가 변경되는가?
 - [x] 없는 path로 갈 경우, 404 처리가 되는가?
 - [x] 해당하는 path의 component만 표시하는가?
 
